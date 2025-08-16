@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { logIncomingCall, getCalls } from "../controllers/callController";
+import { logIncomingCall, getCalls } from '../controllers/callController.js';
 const router = Router();
 
 router.get("/", (req, res) => {

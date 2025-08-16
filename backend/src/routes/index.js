@@ -1,9 +1,9 @@
 // src/routes/index.js
 import { Router } from "express";
 
-import callsRoutes from "./calls.js";
-import buyersRoutes from "./buyers.js";
-import logsRoutes from "./logs.js";
+import callsRoutes from './call.js';
+import buyersRoutes from './buyer.js';
+import logsRoutes from './logs.js';
 
 const routes = Router();
 
