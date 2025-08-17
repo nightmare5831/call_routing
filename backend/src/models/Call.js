@@ -12,7 +12,7 @@ const callSchema = new mongoose.Schema(
 
     // Caller input
     zipCode: { type: String },                               // Entered ZIP code
-    serviceType: { type: String, enum: ["Plumbing", "Pest Control", "HVAC", "Other"] }, 
+    serviceType: { type: String },                           // Service type (any string) 
 
     // Campaign metadata
     campaign: { type: String },                              // Campaign/Source identifier
@@ -26,7 +26,6 @@ const callSchema = new mongoose.Schema(
     // Call status
     status: { 
       type: String, 
-      enum: ["incoming", "accepted", "rejected", "missed", "fallback"], 
       default: "incoming" 
     },
 
